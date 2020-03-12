@@ -49,15 +49,16 @@ var rootCmd = &cobra.Command{
 
 var logPS, logFS bool
 var rDirs, dirs []string
-var defaultRDirs = []string{
-	"/usr",
-	"/tmp",
+var defaultRDirs = []string{}
+var defaultDirs = []string{
 	"/etc",
-	"/home",
-	"/var",
-	"/opt",
+	"/bin",
+	"/usr/bin",
+	"/usr/local/bin",
+	"/lib",
+	"/usr/lib",
+	"/usr/local/lib",
 }
-var defaultDirs = []string{}
 var triggerInterval int
 var colored bool
 var debug bool
